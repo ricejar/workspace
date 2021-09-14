@@ -1,0 +1,5 @@
+hello.c:27:6:red	8	static
+hello.c:31:6:yellow	8	static
+hello.c:35:6:top_msg	8	static
+hello.c:43:5:main	32	static
+hello.c:194:6:serial_print_things	16	static

@@ -1,0 +1,55 @@
+/*
+ * task.c
+ *
+ *
+ *
+ *
+ *  Created on: Sep 9, 2021
+ *      Author: wangy62
+ */
+
+#include "stm32f769xx.h"
+#include "hello.h"
+
+#include<stdint.h>
+
+GPIO_InitTypeDef GPIO_InitStruct;
+
+void LED_GPIO_Init(void){
+	__HAL_RCC_GPIOJ_CLK_ENABLE();
+
+	GPIO_InitStruct.Pin = GPIO_PIN_5;
+	GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+	GPIO_InitStruct.Pull = GPIO_PULLUP;
+	GPIO_InitStruct.Speed = GPIO_SPEED_MEDIUM;
+	HAL_GPIO_Init(GPIOJ, &GPIO_InitStruct);
+}
+
+int main(void)
+{
+    Sys_Init(); // This always goes at the top of main (defined in init.c)
+    LED_GPIO_Init();
+    //char choice;
+
+    //printf("\033[2J\033[;H"); // Erase screen & move cursor to home position
+    //fflush(stdout); // Need to flush stdout after using printf that doesn't end in \n
+    //printf("press ESC to quit.\r\n\n");
+
+
+
+    //HAL_GPIO_WritePin(GPIOJ, GPIO_PIN_5, GPIO_PIN_SET);         // Turn green LED on (GPIO_PIN_SET == 1)
+    //HAL_Delay(2000);
+
+    while(1){
+    	HAL_GPIO_WritePin(GPIOJ, GPIO_PIN_5, GPIO_PIN_SET);
+    	HAL_Delay(1000);
+    	HAL_GPIO_WritePin(GPIOJ, GPIO_PIN_5, GPIO_PIN_RESET);
+    	HAL_Delay(1000);
+
+
+
+    }
+
+
+}
+

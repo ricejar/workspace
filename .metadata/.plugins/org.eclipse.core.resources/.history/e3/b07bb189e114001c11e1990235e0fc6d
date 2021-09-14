@@ -1,0 +1,31 @@
+/*
+ * task3_reg.c
+ *
+ *  Created on: Sep 13, 2021
+ *      Author: wangy62
+ */
+
+#include "stm32f769xx.h"
+#include "hello.h"
+
+#include<stdint.h>
+
+
+
+
+int main(void){
+
+	Sys_Init();
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIODEN;
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN;
+	GPIOD -> MODER |= 0x00000100U;
+	GPIOC -> MODER &= 0xFFFF3FFFU;
+
+
+	while(1){
+		if (GPIOD -> IDR & 0x00000080U)
+			GPIOD ->BSRR = 0x00100000U;
+	}
+
+}
+

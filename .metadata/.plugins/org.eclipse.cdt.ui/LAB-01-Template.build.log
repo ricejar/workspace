@@ -1,0 +1,27 @@
+18:45:24 **** Incremental Build of configuration Debug for project LAB-01-Template ****
+make all 
+arm-none-eabi-gcc "../src/task3_reg.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -c -I"F:/21Fall/ECSE4790/workspace/LAB-01-Template/inc" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Device/ST/STM32F7xx/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/STM32F7xx_HAL_Driver/Inc" -Og -ffunction-sections -Wall -Wdouble-promotion -fstack-usage -MMD -MP -MF"src/task3_reg.d" -MT"src/task3_reg.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "src/task3_reg.o"
+../src/task3_reg.c: In function 'main':
+../src/task3_reg.c:30:22: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat=]
+   30 |   printf("Pin state %d\r\n",GPIOC -> IDR & 0x00000080 );
+      |                     ~^
+      |                      |
+      |                      int
+      |                     %ld
+arm-none-eabi-gcc -o "LAB-01-Template.elf" @"objects.list"   -mcpu=cortex-m7 -T"F:\21Fall\ECSE4790\workspace\LAB-01-Template\LinkerScript.ld" --specs=nosys.specs -Wl,-Map="LAB-01-Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB-01-Template.elf
+ 
+arm-none-eabi-size   LAB-01-Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11428	    120	   1216	  12764	   31dc	LAB-01-Template.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  LAB-01-Template.elf  > "LAB-01-Template.list"
+Finished building: LAB-01-Template.list
+ 
+arm-none-eabi-objcopy  -O binary  LAB-01-Template.elf  "LAB-01-Template.bin"
+Finished building: LAB-01-Template.bin
+ 
+
+18:45:28 Build Finished. 0 errors, 1 warnings. (took 3s.211ms)
+

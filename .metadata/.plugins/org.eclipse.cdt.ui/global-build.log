@@ -1,0 +1,242 @@
+17:39:45 **** Incremental Build of configuration Debug for project LAB-01-Template ****
+make all 
+arm-none-eabi-gcc "../src/task3_reg.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -c -I"F:/21Fall/ECSE4790/workspace/LAB-01-Template/inc" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Device/ST/STM32F7xx/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/STM32F7xx_HAL_Driver/Inc" -Og -ffunction-sections -Wall -Wdouble-promotion -fstack-usage -MMD -MP -MF"src/task3_reg.d" -MT"src/task3_reg.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "src/task3_reg.o"
+../src/task3_reg.c: In function 'main':
+../src/task3_reg.c:21:16: warning: value computed is not used [-Wunused-value]
+   21 |   GPIOD ->BSRR > 0x00000010U;
+arm-none-eabi-gcc -o "LAB-01-Template.elf" @"objects.list"   -mcpu=cortex-m7 -T"F:\21Fall\ECSE4790\workspace\LAB-01-Template\LinkerScript.ld" --specs=nosys.specs -Wl,-Map="LAB-01-Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB-01-Template.elf
+ 
+arm-none-eabi-size   LAB-01-Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+    844	     16	   1056	   1916	    77c	LAB-01-Template.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  LAB-01-Template.elf  > "LAB-01-Template.list"
+Finished building: LAB-01-Template.list
+ 
+arm-none-eabi-objcopy  -O binary  LAB-01-Template.elf  "LAB-01-Template.bin"
+Finished building: LAB-01-Template.bin
+ 
+17:40:43 **** Incremental Build of configuration Debug for project LAB-01-Template ****
+make all 
+arm-none-eabi-gcc "../src/task3_reg.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -c -I"F:/21Fall/ECSE4790/workspace/LAB-01-Template/inc" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Device/ST/STM32F7xx/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/STM32F7xx_HAL_Driver/Inc" -Og -ffunction-sections -Wall -Wdouble-promotion -fstack-usage -MMD -MP -MF"src/task3_reg.d" -MT"src/task3_reg.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "src/task3_reg.o"
+arm-none-eabi-gcc -o "LAB-01-Template.elf" @"objects.list"   -mcpu=cortex-m7 -T"F:\21Fall\ECSE4790\workspace\LAB-01-Template\LinkerScript.ld" --specs=nosys.specs -Wl,-Map="LAB-01-Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB-01-Template.elf
+ 
+arm-none-eabi-size   LAB-01-Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+    848	     16	   1056	   1920	    780	LAB-01-Template.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  LAB-01-Template.elf  > "LAB-01-Template.list"
+Finished building: LAB-01-Template.list
+ 
+arm-none-eabi-objcopy  -O binary  LAB-01-Template.elf  "LAB-01-Template.bin"
+Finished building: LAB-01-Template.bin
+ 
+17:42:57 **** Incremental Build of configuration Debug for project LAB-01-Template ****
+make all 
+arm-none-eabi-gcc "../src/task3_reg.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -c -I"F:/21Fall/ECSE4790/workspace/LAB-01-Template/inc" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Device/ST/STM32F7xx/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/STM32F7xx_HAL_Driver/Inc" -Og -ffunction-sections -Wall -Wdouble-promotion -fstack-usage -MMD -MP -MF"src/task3_reg.d" -MT"src/task3_reg.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "src/task3_reg.o"
+arm-none-eabi-gcc -o "LAB-01-Template.elf" @"objects.list"   -mcpu=cortex-m7 -T"F:\21Fall\ECSE4790\workspace\LAB-01-Template\LinkerScript.ld" --specs=nosys.specs -Wl,-Map="LAB-01-Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB-01-Template.elf
+ 
+arm-none-eabi-size   LAB-01-Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+    848	     16	   1056	   1920	    780	LAB-01-Template.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  LAB-01-Template.elf  > "LAB-01-Template.list"
+Finished building: LAB-01-Template.list
+ 
+arm-none-eabi-objcopy  -O binary  LAB-01-Template.elf  "LAB-01-Template.bin"
+Finished building: LAB-01-Template.bin
+ 
+17:48:32 **** Incremental Build of configuration Debug for project LAB-01-Template ****
+make all 
+arm-none-eabi-gcc "../src/task3_reg.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -c -I"F:/21Fall/ECSE4790/workspace/LAB-01-Template/inc" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Device/ST/STM32F7xx/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/STM32F7xx_HAL_Driver/Inc" -Og -ffunction-sections -Wall -Wdouble-promotion -fstack-usage -MMD -MP -MF"src/task3_reg.d" -MT"src/task3_reg.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "src/task3_reg.o"
+arm-none-eabi-gcc -o "LAB-01-Template.elf" @"objects.list"   -mcpu=cortex-m7 -T"F:\21Fall\ECSE4790\workspace\LAB-01-Template\LinkerScript.ld" --specs=nosys.specs -Wl,-Map="LAB-01-Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB-01-Template.elf
+ 
+arm-none-eabi-size   LAB-01-Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6260	     20	   1188	   7468	   1d2c	LAB-01-Template.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  LAB-01-Template.elf  > "LAB-01-Template.list"
+Finished building: LAB-01-Template.list
+ 
+arm-none-eabi-objcopy  -O binary  LAB-01-Template.elf  "LAB-01-Template.bin"
+Finished building: LAB-01-Template.bin
+ 
+17:53:34 **** Incremental Build of configuration Debug for project LAB-01-Template ****
+make all 
+arm-none-eabi-gcc "../src/task3_reg.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -c -I"F:/21Fall/ECSE4790/workspace/LAB-01-Template/inc" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Device/ST/STM32F7xx/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/STM32F7xx_HAL_Driver/Inc" -Og -ffunction-sections -Wall -Wdouble-promotion -fstack-usage -MMD -MP -MF"src/task3_reg.d" -MT"src/task3_reg.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "src/task3_reg.o"
+arm-none-eabi-gcc -o "LAB-01-Template.elf" @"objects.list"   -mcpu=cortex-m7 -T"F:\21Fall\ECSE4790\workspace\LAB-01-Template\LinkerScript.ld" --specs=nosys.specs -Wl,-Map="LAB-01-Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB-01-Template.elf
+ 
+arm-none-eabi-size   LAB-01-Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6264	     20	   1188	   7472	   1d30	LAB-01-Template.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  LAB-01-Template.elf  > "LAB-01-Template.list"
+Finished building: LAB-01-Template.list
+ 
+arm-none-eabi-objcopy  -O binary  LAB-01-Template.elf  "LAB-01-Template.bin"
+Finished building: LAB-01-Template.bin
+ 
+18:24:42 **** Incremental Build of configuration Debug for project LAB-01-Template ****
+make all 
+arm-none-eabi-gcc "../src/task3_reg.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -c -I"F:/21Fall/ECSE4790/workspace/LAB-01-Template/inc" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Device/ST/STM32F7xx/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/STM32F7xx_HAL_Driver/Inc" -Og -ffunction-sections -Wall -Wdouble-promotion -fstack-usage -MMD -MP -MF"src/task3_reg.d" -MT"src/task3_reg.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "src/task3_reg.o"
+arm-none-eabi-gcc -o "LAB-01-Template.elf" @"objects.list"   -mcpu=cortex-m7 -T"F:\21Fall\ECSE4790\workspace\LAB-01-Template\LinkerScript.ld" --specs=nosys.specs -Wl,-Map="LAB-01-Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB-01-Template.elf
+ 
+arm-none-eabi-size   LAB-01-Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6292	     20	   1188	   7500	   1d4c	LAB-01-Template.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  LAB-01-Template.elf  > "LAB-01-Template.list"
+Finished building: LAB-01-Template.list
+ 
+arm-none-eabi-objcopy  -O binary  LAB-01-Template.elf  "LAB-01-Template.bin"
+Finished building: LAB-01-Template.bin
+ 
+18:25:54 **** Incremental Build of configuration Debug for project LAB-01-Template ****
+make all 
+arm-none-eabi-gcc "../src/task3_reg.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -c -I"F:/21Fall/ECSE4790/workspace/LAB-01-Template/inc" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Device/ST/STM32F7xx/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/STM32F7xx_HAL_Driver/Inc" -Og -ffunction-sections -Wall -Wdouble-promotion -fstack-usage -MMD -MP -MF"src/task3_reg.d" -MT"src/task3_reg.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "src/task3_reg.o"
+arm-none-eabi-gcc -o "LAB-01-Template.elf" @"objects.list"   -mcpu=cortex-m7 -T"F:\21Fall\ECSE4790\workspace\LAB-01-Template\LinkerScript.ld" --specs=nosys.specs -Wl,-Map="LAB-01-Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB-01-Template.elf
+ 
+arm-none-eabi-size   LAB-01-Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6300	     20	   1188	   7508	   1d54	LAB-01-Template.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  LAB-01-Template.elf  > "LAB-01-Template.list"
+Finished building: LAB-01-Template.list
+ 
+arm-none-eabi-objcopy  -O binary  LAB-01-Template.elf  "LAB-01-Template.bin"
+Finished building: LAB-01-Template.bin
+ 
+18:29:32 **** Incremental Build of configuration Debug for project LAB-01-Template ****
+make all 
+arm-none-eabi-gcc "../src/task3_reg.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -c -I"F:/21Fall/ECSE4790/workspace/LAB-01-Template/inc" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Device/ST/STM32F7xx/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/STM32F7xx_HAL_Driver/Inc" -Og -ffunction-sections -Wall -Wdouble-promotion -fstack-usage -MMD -MP -MF"src/task3_reg.d" -MT"src/task3_reg.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "src/task3_reg.o"
+../src/task3_reg.c: In function 'main':
+../src/task3_reg.c:29:22: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat=]
+   29 |   printf("Pin state %d\r\n",GPIOD -> IDR & 0x00000080U);
+      |                     ~^
+      |                      |
+      |                      int
+      |                     %ld
+arm-none-eabi-gcc -o "LAB-01-Template.elf" @"objects.list"   -mcpu=cortex-m7 -T"F:\21Fall\ECSE4790\workspace\LAB-01-Template\LinkerScript.ld" --specs=nosys.specs -Wl,-Map="LAB-01-Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB-01-Template.elf
+ 
+arm-none-eabi-size   LAB-01-Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11416	    120	   1216	  12752	   31d0	LAB-01-Template.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  LAB-01-Template.elf  > "LAB-01-Template.list"
+Finished building: LAB-01-Template.list
+ 
+arm-none-eabi-objcopy  -O binary  LAB-01-Template.elf  "LAB-01-Template.bin"
+Finished building: LAB-01-Template.bin
+ 
+18:30:59 **** Incremental Build of configuration Debug for project LAB-01-Template ****
+make all 
+arm-none-eabi-gcc "../src/task3_reg.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -c -I"F:/21Fall/ECSE4790/workspace/LAB-01-Template/inc" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Device/ST/STM32F7xx/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/STM32F7xx_HAL_Driver/Inc" -Og -ffunction-sections -Wall -Wdouble-promotion -fstack-usage -MMD -MP -MF"src/task3_reg.d" -MT"src/task3_reg.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "src/task3_reg.o"
+../src/task3_reg.c: In function 'main':
+../src/task3_reg.c:29:22: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'volatile long unsigned int'} [-Wformat=]
+   29 |   printf("Pin state %d\r\n",GPIOD -> IDR );
+      |                     ~^
+      |                      |
+      |                      int
+      |                     %ld
+arm-none-eabi-gcc -o "LAB-01-Template.elf" @"objects.list"   -mcpu=cortex-m7 -T"F:\21Fall\ECSE4790\workspace\LAB-01-Template\LinkerScript.ld" --specs=nosys.specs -Wl,-Map="LAB-01-Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB-01-Template.elf
+ 
+arm-none-eabi-size   LAB-01-Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11408	    120	   1216	  12744	   31c8	LAB-01-Template.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  LAB-01-Template.elf  > "LAB-01-Template.list"
+Finished building: LAB-01-Template.list
+ 
+arm-none-eabi-objcopy  -O binary  LAB-01-Template.elf  "LAB-01-Template.bin"
+Finished building: LAB-01-Template.bin
+ 
+18:33:28 **** Incremental Build of configuration Debug for project LAB-01-Template ****
+make all 
+arm-none-eabi-gcc "../src/task3_reg.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -c -I"F:/21Fall/ECSE4790/workspace/LAB-01-Template/inc" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Device/ST/STM32F7xx/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/STM32F7xx_HAL_Driver/Inc" -Og -ffunction-sections -Wall -Wdouble-promotion -fstack-usage -MMD -MP -MF"src/task3_reg.d" -MT"src/task3_reg.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "src/task3_reg.o"
+../src/task3_reg.c: In function 'main':
+../src/task3_reg.c:30:22: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'volatile long unsigned int'} [-Wformat=]
+   30 |   printf("Pin state %d\r\n",GPIOD -> IDR );
+      |                     ~^
+      |                      |
+      |                      int
+      |                     %ld
+arm-none-eabi-gcc -o "LAB-01-Template.elf" @"objects.list"   -mcpu=cortex-m7 -T"F:\21Fall\ECSE4790\workspace\LAB-01-Template\LinkerScript.ld" --specs=nosys.specs -Wl,-Map="LAB-01-Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB-01-Template.elf
+ 
+arm-none-eabi-size   LAB-01-Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11420	    120	   1216	  12756	   31d4	LAB-01-Template.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  LAB-01-Template.elf  > "LAB-01-Template.list"
+Finished building: LAB-01-Template.list
+ 
+arm-none-eabi-objcopy  -O binary  LAB-01-Template.elf  "LAB-01-Template.bin"
+Finished building: LAB-01-Template.bin
+ 
+18:38:23 **** Incremental Build of configuration Debug for project LAB-01-Template ****
+make all 
+arm-none-eabi-gcc "../src/task3_reg.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -c -I"F:/21Fall/ECSE4790/workspace/LAB-01-Template/inc" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Device/ST/STM32F7xx/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/STM32F7xx_HAL_Driver/Inc" -Og -ffunction-sections -Wall -Wdouble-promotion -fstack-usage -MMD -MP -MF"src/task3_reg.d" -MT"src/task3_reg.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "src/task3_reg.o"
+../src/task3_reg.c: In function 'main':
+../src/task3_reg.c:30:22: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat=]
+   30 |   printf("Pin state %d\r\n",GPIOD -> IDR & 0x00000080 );
+      |                     ~^
+      |                      |
+      |                      int
+      |                     %ld
+arm-none-eabi-gcc -o "LAB-01-Template.elf" @"objects.list"   -mcpu=cortex-m7 -T"F:\21Fall\ECSE4790\workspace\LAB-01-Template\LinkerScript.ld" --specs=nosys.specs -Wl,-Map="LAB-01-Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB-01-Template.elf
+ 
+arm-none-eabi-size   LAB-01-Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11424	    120	   1216	  12760	   31d8	LAB-01-Template.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  LAB-01-Template.elf  > "LAB-01-Template.list"
+Finished building: LAB-01-Template.list
+ 
+arm-none-eabi-objcopy  -O binary  LAB-01-Template.elf  "LAB-01-Template.bin"
+Finished building: LAB-01-Template.bin
+ 
+18:45:24 **** Incremental Build of configuration Debug for project LAB-01-Template ****
+make all 
+arm-none-eabi-gcc "../src/task3_reg.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F769xx -DUSE_STM32F769I_DISCO -c -I"F:/21Fall/ECSE4790/workspace/LAB-01-Template/inc" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/CMSIS/Device/ST/STM32F7xx/Include" -I"F:/21Fall/ECSE4790/workspace/stm32lib/STM32F7xx_HAL_Driver/Inc" -Og -ffunction-sections -Wall -Wdouble-promotion -fstack-usage -MMD -MP -MF"src/task3_reg.d" -MT"src/task3_reg.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "src/task3_reg.o"
+../src/task3_reg.c: In function 'main':
+../src/task3_reg.c:30:22: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat=]
+   30 |   printf("Pin state %d\r\n",GPIOC -> IDR & 0x00000080 );
+      |                     ~^
+      |                      |
+      |                      int
+      |                     %ld
+arm-none-eabi-gcc -o "LAB-01-Template.elf" @"objects.list"   -mcpu=cortex-m7 -T"F:\21Fall\ECSE4790\workspace\LAB-01-Template\LinkerScript.ld" --specs=nosys.specs -Wl,-Map="LAB-01-Template.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB-01-Template.elf
+ 
+arm-none-eabi-size   LAB-01-Template.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11428	    120	   1216	  12764	   31dc	LAB-01-Template.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S  LAB-01-Template.elf  > "LAB-01-Template.list"
+Finished building: LAB-01-Template.list
+ 
+arm-none-eabi-objcopy  -O binary  LAB-01-Template.elf  "LAB-01-Template.bin"
+Finished building: LAB-01-Template.bin
+ 
